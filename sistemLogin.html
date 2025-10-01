@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Sederhana - Google OAuth</title>
+    <link rel="stylesheet" href="sistemLogin.css">
+</head>
+<body>
+    <div class="login-container">
+        <!-- Login Form -->
+        <div id="loginBox">
+            <h2>Login</h2>
+            <div id="googleButton"></div>
+            <div class="error-message" id="errorMessage"></div>
+            <div class="note">
+                <strong>Catatan:</strong> Login dengan Google memerlukan koneksi internet aktif.
+            </div>
+        </div>
+        
+        <!-- Dashboard after login -->
+        <div class="dashboard" id="dashboard">
+            <img src="" alt="Profile" class="profile-img" id="profileImg">
+            <div class="user-info">
+                <div class="info-row">
+                    <span class="info-label">Nama:</span>
+                    <span class="info-value" id="userName"></span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Email:</span>
+                    <span class="info-value" id="userEmail"></span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Status:</span>
+                    <span class="info-value" style="color: #28a745;">✓ Terverifikasi</span>
+                </div>
+            </div>
+            <button class="logout-btn" id="logoutBtn">Logout</button>
+        </div>
+    </div>
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+    <script src="sistemLogin.js"></script>
+</body>
+</html>
