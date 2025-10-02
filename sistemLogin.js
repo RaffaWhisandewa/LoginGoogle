@@ -1,5 +1,5 @@
         // GANTI dengan Client ID Anda dari Google Cloud Console
-        const CLIENT_ID = '329300608269-3s3b77kqnomjbj1fdtq5mvbndn4faeh2.apps.googleusercontent.com';
+        const CLIENT_ID = '329300608269-tpv1dff78acj6j0avi07872u0kvgkhn1.apps.googleusercontent.com';
         
         let currentUser = null;
 
